@@ -4,15 +4,10 @@
 <title>chapter 3 example 4</title>
 <meta charset="utf-8">
 
-
-<!-- <script src="../../libs/d3.js"></script> -->
-<!-- <script src="../../libs/topojson.v1.min.js"></script> -->
-<!-- <script src="../../libs/d3-array.js"></script> -->
-<!-- <script src="../../libs/d3-geo.js"></script> -->
-<script src="../../libs/my_turf_build.min.js"></script>
-
 <script src="//d3js.org/d3.v4.js"></script>
 <script src="//d3js.org/topojson.v1.min.js"></script>
+<script src="libs/my_turf_build.min.js"></script>
+
 
 <style type="text/css">
 
@@ -298,7 +293,7 @@ function ready(world) {
 /* Data load and init */
 /* ================== */
 
-d3.json('../../data/world/world-110.json', function(error, data) {
+d3.json('data/world-110.json', function(error, data) {
   if (error) throw error;
 
   ready(data);
